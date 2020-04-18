@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: reid-string-mybatis
+  swagger:
+    enable: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/redis_study?serverTimezone=GMT%2B8
+    username: redis_study
+    password: 123456
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.ityoudream.model
+logging:
+  level:
+    com:
+      ityoudream:
+        mapper: debug
