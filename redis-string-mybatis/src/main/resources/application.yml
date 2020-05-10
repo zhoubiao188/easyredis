@@ -1,3 +1,4 @@
+
 spring:
   application:
     name: reid-string-mybatis
@@ -5,8 +6,8 @@ spring:
     enable: true
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/redis_study?serverTimezone=GMT%2B8
-    username: redis_study
+    url: jdbc:mysql://127.0.0.1:33306/study_redis?serverTimezone=GMT%2B8
+    username: root
     password: 123456
   redis:
     database: 0
@@ -15,9 +16,11 @@ spring:
     password:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.ityoudream.model
+  type-aliases-package: cn.ityoudream.model
 logging:
   level:
     com:
       ityoudream:
         mapper: debug
+server:
+  port: 8081
