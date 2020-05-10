@@ -3,9 +3,9 @@ spring:
     name: redis-string-springcache
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/study_redis?serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:33306/study_redis?serverTimezone=GMT%2B8
     username: root
-    password: root
+    password: 123456
 #redis config
   redis:
     database: 0
@@ -21,15 +21,15 @@ spring:
         min-idle: 0
     timeout: 5000ms
 server:
-  port: 8080
+  port: 8081
 #mybatis config
 mybatis:
-  type-aliases-package: com.ityoudream.model
+  type-aliases-package: cn.ityoudream.model
   mapper-locations: classpath:mapper/*.xml
 # log config
 logging:
   level:
-    com:
+    cn:
       ityoudream:
         mapper: debug
 

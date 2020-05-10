@@ -1,4 +1,4 @@
-package com.ityoudream.config;
+package cn.ityoudream.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -23,7 +23,7 @@ public class SwaggerConfig {
                 .apiInfo(apiInfo())
                 .enable(swaggerEnabled)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.ityoudream"))
+                .apis(RequestHandlerSelectors.basePackage("cn.ityoudream"))
                 .paths(PathSelectors.any())
                 .build();
     }

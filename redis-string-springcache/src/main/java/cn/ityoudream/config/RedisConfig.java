@@ -1,4 +1,4 @@
-package com.ityoudream.config;
+package cn.ityoudream.config;
 
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;

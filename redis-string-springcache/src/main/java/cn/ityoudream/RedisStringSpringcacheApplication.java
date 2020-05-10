@@ -1,11 +1,11 @@
-package com.ityoudream;
+package cn.ityoudream;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.ityoudream.mapper")
+@MapperScan("cn.ityoudream.mapper")
 public class RedisStringSpringcacheApplication {
 
     public static void main(String[] args) {
