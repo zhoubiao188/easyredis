@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: redis-string-lua-limit
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    #redis default config
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 0
+server:
+  port: 8081
+#debug info
+logging:
+  level:
+    cn:
+      ityoudream: debug
+
+#swagger
+swagger:
+  enable: true
+
+
