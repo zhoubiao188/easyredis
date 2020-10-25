@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: redis-hash-object
+  swagger2:
+    enabled: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password:
+server:
+  port: 8080
+logging:
+  level:
+    cn.ityoudream.hash: debug
+# redis conf
